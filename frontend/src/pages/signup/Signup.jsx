@@ -28,17 +28,17 @@ const SignUp = () => {
 		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
-					Sign Up <span className='text-blue-500'> ChatApp</span>
+					Sign Up <span className='text-blue-500'> Chatutea</span>
 				</h1>
 
 				<form onSubmit={handleSubmit}>
 					<div>
 						<label className='label p-2'>
-							<span className='text-base label-text'>Full Name</span>
+							<span className='text-base label-text'>Nombre Completo</span>
 						</label>
 						<input
 							type='text'
-							placeholder='John Doe'
+							placeholder='Tu nombre completo'
 							className='w-full input input-bordered  h-10'
 							value={inputs.fullName}
 							onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
@@ -47,11 +47,11 @@ const SignUp = () => {
 
 					<div>
 						<label className='label p-2 '>
-							<span className='text-base label-text'>Username</span>
+							<span className='text-base label-text'>Nombre de Usuario</span>
 						</label>
 						<input
 							type='text'
-							placeholder='johndoe'
+							placeholder='Tu nombre de usuario'
 							className='w-full input input-bordered h-10'
 							value={inputs.username}
 							onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
@@ -60,11 +60,11 @@ const SignUp = () => {
 
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Password</span>
+							<span className='text-base label-text'>Contraseña</span>
 						</label>
 						<input
 							type='password'
-							placeholder='Enter Password'
+							placeholder='Tu contraseña'
 							className='w-full input input-bordered h-10'
 							value={inputs.password}
 							onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
@@ -73,11 +73,11 @@ const SignUp = () => {
 
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Confirm Password</span>
+							<span className='text-base label-text'>Confirmar Contraseña</span>
 						</label>
 						<input
 							type='password'
-							placeholder='Confirm Password'
+							placeholder='Confirma tu contraseña'
 							className='w-full input input-bordered h-10'
 							value={inputs.confirmPassword}
 							onChange={(e) => setInputs({ ...inputs, confirmPassword: e.target.value })}
@@ -91,7 +91,7 @@ const SignUp = () => {
 						className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'
 						href='#'
 					>
-						Already have an account?
+						¿Ya tienes una cuenta?
 					</Link>
 
 					<div>
