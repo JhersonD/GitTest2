@@ -8,7 +8,7 @@ import messageRoutes from "./models/message.model.js";
 import userRoutes from "./routes/user.routes.js";
 
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 const __dirname = path.resolve();
