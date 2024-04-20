@@ -1,12 +1,14 @@
+import path from "path"
 import express from "express"
 import dotenv from "dotenv"
 import cookieParser from "cookie-parser";
-import path from "path"
+
 import authRoutes from "./routes/auth.routes.js"
-import connectToMongoDB from "./database/connectToMongoDB.js";
 import messageRoutes from "./models/message.model.js";
 import userRoutes from "./routes/user.routes.js";
 
+import { app, server } from "./socket/socket.js";
+import connectToMongoDB from "./database/connectToMongoDB.js";
 
 const PORT = process.env.PORT || 5000;
 const app = express();
