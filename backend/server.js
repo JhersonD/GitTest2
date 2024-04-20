@@ -11,7 +11,6 @@ import { app, server } from "./socket/socket.js";
 import connectToMongoDB from "./database/connectToMongoDB.js";
 
 const PORT = process.env.PORT || 5000;
-const app = express();
 
 const __dirname = path.resolve();
 
@@ -32,5 +31,5 @@ app.get("*", (req, res) => {
 
 app.listen(PORT,() => {
     connectToMongoDB()
-    console.log("Server Running on port",PORT)
+    console.log(`Server Running on port ${PORT}`);
 }) 
